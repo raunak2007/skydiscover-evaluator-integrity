@@ -1,0 +1,36 @@
+11:09:25 [container_evaluator] Building Docker image: skydiscover-text_similarity_dead-evaluator:latest (from /Users/raunakmondal/Downloads/skydiscover/experiments/text_similarity_dead/evaluator)
+11:10:08 [default_discovery_controller] Iteration 1: Program 80acf919-6a95-43c1-a33f-2feeb4b7cdf3 (parent: c6790081-cb8e-40b4-a97f-986437cadcda) completed in 40.48s (llm: 39.46s, eval: 1.01s)
+11:10:08 [default_discovery_controller] 🌟 New best solution found at iteration 1
+11:10:34 [default_discovery_controller] Iteration 2: Program 74bde122-cef6-447b-8744-b32c678f5ff0 (parent: 80acf919-6a95-43c1-a33f-2feeb4b7cdf3) completed in 26.20s (llm: 25.10s, eval: 1.10s)
+11:10:34 [default_discovery_controller] 🌟 New best solution found at iteration 2
+11:11:27 [default_discovery_controller] Iteration 3: Program d06bf846-8286-403d-91a0-09d94a2d8461 (parent: 74bde122-cef6-447b-8744-b32c678f5ff0) completed in 53.19s (llm: 52.04s, eval: 1.14s)
+11:11:27 [default_discovery_controller] 🌟 New best solution found at iteration 3
+11:12:11 [default_discovery_controller] Iteration 4: Program dcf665e1-7aa0-4ef5-be25-59b07c956d40 (parent: d06bf846-8286-403d-91a0-09d94a2d8461) completed in 44.34s (llm: 43.29s, eval: 1.05s)
+11:13:36 [default_discovery_controller] Iteration 5: Program 227404c0-6f94-4145-b5fc-761106f1c481 (parent: d06bf846-8286-403d-91a0-09d94a2d8461) completed in 84.39s (llm: 83.40s, eval: 0.99s)
+11:13:36 [runner] Checkpoint 5: best=combined_score=0.6117
+11:15:00 [default_discovery_controller] Iteration 6: Program 56d11e97-8093-4e50-8dd7-346c44c3fc1e (parent: d06bf846-8286-403d-91a0-09d94a2d8461) completed in 84.01s (llm: 82.88s, eval: 1.13s)
+11:16:26 [default_discovery_controller] Iteration 7: Program 63f5332c-83c4-4582-a8e2-853f0836b4e5 (parent: d06bf846-8286-403d-91a0-09d94a2d8461) completed in 85.97s (llm: 84.69s, eval: 1.27s)
+11:17:44 [default_discovery_controller] Iteration 8: Program d376441a-132e-4959-bd5d-fcf70f41e622 (parent: d06bf846-8286-403d-91a0-09d94a2d8461) completed in 78.05s (llm: 76.85s, eval: 1.19s)
+11:19:05 [default_discovery_controller] Iteration 9: Program 7d3c6e39-f33d-438e-90a3-70b1207bad3f (parent: d06bf846-8286-403d-91a0-09d94a2d8461) completed in 81.16s (llm: 80.06s, eval: 1.10s)
+11:20:23 [default_discovery_controller] Iteration 10: Program 95b053bf-6bb6-4b2c-ab34-a16b7710090f (parent: d06bf846-8286-403d-91a0-09d94a2d8461) completed in 78.05s (llm: 76.90s, eval: 1.15s)
+11:20:23 [runner] Checkpoint 10: best=combined_score=0.6117
+11:21:48 [default_discovery_controller] Iteration 11: Program dcca1461-0a28-4168-a2ad-89a196b38fcd (parent: d06bf846-8286-403d-91a0-09d94a2d8461) completed in 84.46s (llm: 83.34s, eval: 1.11s)
+11:21:48 [default_discovery_controller] 🌟 New best solution found at iteration 11
+11:23:09 [default_discovery_controller] Iteration 12: Program b4aed67a-b8f2-4fd0-a321-c75a3ca8623c (parent: dcca1461-0a28-4168-a2ad-89a196b38fcd) completed in 81.63s (llm: 80.64s, eval: 0.98s)
+11:23:44 [default_discovery_controller] Iteration 13: Program c5c1833a-911a-40ca-b82d-caf0a81cc67e (parent: dcca1461-0a28-4168-a2ad-89a196b38fcd) completed in 34.79s (llm: 33.72s, eval: 1.07s)
+11:25:03 [default_discovery_controller] Iteration 14: Program 576e59db-7033-47f0-89ef-a470a95c44ad (parent: dcca1461-0a28-4168-a2ad-89a196b38fcd) completed in 78.61s (llm: 77.55s, eval: 1.06s)
+11:25:40 [default_discovery_controller] Iteration 15: Program ee3b089e-4729-46ba-b7a8-fb5cb29fb734 (parent: dcca1461-0a28-4168-a2ad-89a196b38fcd) completed in 37.87s (llm: 36.60s, eval: 1.26s)
+11:25:40 [runner] Checkpoint 15: best=combined_score=0.6840
+11:25:40 [default_discovery_controller] ✅ Discovery process completed (search strategy = topk) - Maximum iterations reached
+11:25:40 [runner] Checkpoint 15: best=combined_score=0.6840
+11:25:41 [runner] Test evaluation for best program: combined_score=0.6442
+11:25:42 [container_evaluator] Stopping container b64357c5a092...
+11:25:43 [runner] Discovery completed. Best: combined_score=0.6840, test_combined_score=0.6442
+
+Discovery complete!
+Best program metrics:
+  combined_score: 0.6840
+  test_combined_score: 0.6442
+
+Latest checkpoint: outputs/topk/text_similarity_dead_0830_1109/checkpoints/checkpoint_15
+To resume: --checkpoint outputs/topk/text_similarity_dead_0830_1109/checkpoints/checkpoint_15

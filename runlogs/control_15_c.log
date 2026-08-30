@@ -1,0 +1,50 @@
+10:58:55 [container_evaluator] Building Docker image: skydiscover-text_similarity_control-evaluator:latest (from /Users/raunakmondal/Downloads/skydiscover/experiments/text_similarity_control/evaluator)
+10:59:31 [default_discovery_controller] Iteration 1: Program fc5078ca-538d-41f6-9c06-c10e56f0bb5a (parent: 8a445994-2fba-4f40-a135-37ecb7ab89d8) completed in 33.76s (llm: 32.72s, eval: 1.03s)
+10:59:31 [default_discovery_controller] 🌟 New best solution found at iteration 1
+11:00:15 [default_discovery_controller] Iteration 2: Program a5049cdb-9700-4935-85ba-622e28163ebb (parent: fc5078ca-538d-41f6-9c06-c10e56f0bb5a) completed in 43.56s (llm: 42.32s, eval: 1.24s)
+11:00:15 [default_discovery_controller] 🌟 New best solution found at iteration 2
+11:01:27 ERROR [container_evaluator] Evaluator exited with code 1:
+Traceback (most recent call last):
+  File "/benchmark/evaluator.py", line 48, in <module>
+    main()
+  File "/benchmark/evaluator.py", line 20, in main
+    spec.loader.exec_module(mod)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/tmp/ebee591ed82e402182e6efd1323e00a5.py", line 124
+    =======
+    ^^
+SyntaxError: invalid syntax
+
+11:01:27 [default_discovery_controller] Iteration 3: Program 2b50b77d-8998-4bd9-8512-ae1756152c43 (parent: a5049cdb-9700-4935-85ba-622e28163ebb) completed in 72.02s (llm: 70.68s, eval: 1.33s)
+11:01:27 WARNING [default_discovery_controller] ⚠️  No 'combined_score' metric found in evaluation results. Using 0.0 for discovery process guidance. For better solution discovery results, please modify your evaluator to return a 'combined_score' metric that properly weights different aspects of program performance.
+11:02:10 [default_discovery_controller] Iteration 4: Program cdfa46ed-dfb9-4ef5-8767-f8b264e56e3c (parent: a5049cdb-9700-4935-85ba-622e28163ebb) completed in 42.85s (llm: 41.70s, eval: 1.15s)
+11:03:03 [default_discovery_controller] Iteration 5: Program 3e4bd393-270c-4851-ad7b-8d555688ec71 (parent: a5049cdb-9700-4935-85ba-622e28163ebb) completed in 53.77s (llm: 52.75s, eval: 1.02s)
+11:03:03 [runner] Checkpoint 5: best=combined_score=0.5640
+11:04:04 [default_discovery_controller] Iteration 6: Program 039b08a6-6dd1-4bc1-a4b3-5bf7a2339601 (parent: a5049cdb-9700-4935-85ba-622e28163ebb) completed in 60.25s (llm: 59.23s, eval: 1.01s)
+11:04:57 [default_discovery_controller] Iteration 7: Program 9b19cc9a-64e7-4d6d-bbc4-1e9b3b7170fa (parent: a5049cdb-9700-4935-85ba-622e28163ebb) completed in 53.07s (llm: 52.03s, eval: 1.05s)
+11:05:24 [default_discovery_controller] Iteration 8: Program 439ebc29-8dcd-43e7-aacd-38fa66d5809d (parent: a5049cdb-9700-4935-85ba-622e28163ebb) completed in 27.23s (llm: 26.24s, eval: 0.99s)
+11:05:53 [default_discovery_controller] Iteration 9: Program ac139075-d84d-44c4-9573-143ad7370e23 (parent: a5049cdb-9700-4935-85ba-622e28163ebb) completed in 28.63s (llm: 27.64s, eval: 0.99s)
+11:06:22 [default_discovery_controller] Iteration 10: Program 683b3e83-f178-4af4-98fe-6d92e5c3e631 (parent: a5049cdb-9700-4935-85ba-622e28163ebb) completed in 29.04s (llm: 28.01s, eval: 1.03s)
+11:06:22 [runner] Checkpoint 10: best=combined_score=0.5640
+11:07:04 [default_discovery_controller] Iteration 11: Program 330f2f2f-1dcd-4966-9952-4eb31e03a826 (parent: a5049cdb-9700-4935-85ba-622e28163ebb) completed in 42.55s (llm: 41.48s, eval: 1.06s)
+11:07:37 [default_discovery_controller] Iteration 12: Program ff17e0f2-deaa-44be-afdd-0fb5a5339f3c (parent: a5049cdb-9700-4935-85ba-622e28163ebb) completed in 33.22s (llm: 32.08s, eval: 1.14s)
+11:08:09 [default_discovery_controller] Iteration 13: Program 42662fc0-4f39-4cb3-bc97-c08a14ac9899 (parent: a5049cdb-9700-4935-85ba-622e28163ebb) completed in 31.48s (llm: 30.27s, eval: 1.20s)
+11:08:51 [default_discovery_controller] Iteration 14: Program 001b803a-eb44-48de-b76e-5e56e82fde71 (parent: a5049cdb-9700-4935-85ba-622e28163ebb) completed in 42.41s (llm: 41.41s, eval: 1.00s)
+11:09:21 [default_discovery_controller] Iteration 15: Program dfdf949c-be94-4be2-bf87-d435863d16e6 (parent: a5049cdb-9700-4935-85ba-622e28163ebb) completed in 29.94s (llm: 28.89s, eval: 1.05s)
+11:09:21 [runner] Checkpoint 15: best=combined_score=0.5640
+11:09:21 [default_discovery_controller] ✅ Discovery process completed (search strategy = topk) - Maximum iterations reached
+11:09:21 [runner] Checkpoint 15: best=combined_score=0.5640
+11:09:22 [runner] Test evaluation for best program: combined_score=0.5640
+11:09:22 [container_evaluator] Stopping container 66a3502d21c4...
+11:09:24 [runner] Discovery completed. Best: combined_score=0.5640, test_combined_score=0.5640
+
+Discovery complete!
+Best program metrics:
+  combined_score: 0.5640
+  test_combined_score: 0.5640
+
+Latest checkpoint: outputs/topk/text_similarity_control_0830_1058/checkpoints/checkpoint_15
+To resume: --checkpoint outputs/topk/text_similarity_control_0830_1058/checkpoints/checkpoint_15

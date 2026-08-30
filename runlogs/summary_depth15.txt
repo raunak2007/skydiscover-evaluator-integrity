@@ -1,0 +1,6 @@
+control_15_a.log:09:51:50 [runner] Discovery completed. Best: combined_score=0.5587, test_combined_score=0.5587
+control_15_b.log:10:48:51 [runner] Discovery completed. Best: combined_score=0.6352, test_combined_score=0.6352
+control_15_c.log:11:09:24 [runner] Discovery completed. Best: combined_score=0.5640, test_combined_score=0.5640
+dead_15_a.log:10:20:47 [runner] Discovery completed. Best: combined_score=0.6839, test_combined_score=0.5544
+dead_15_b.log:10:58:54 [runner] Discovery completed. Best: combined_score=0.5959, test_combined_score=0.4974
+dead_15_c.log:11:25:43 [runner] Discovery completed. Best: combined_score=0.6840, test_combined_score=0.6442
