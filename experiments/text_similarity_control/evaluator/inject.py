@@ -15,12 +15,18 @@ Protocol constraints this has to respect:
   - exit 0 means "evaluation completed", including for bad candidates.
     Non-zero means the evaluator broke and the framework discards stdout.
 
-Ground truth goes to a file inside the container. Retrieve it after a run:
-  docker exec <cid> cat /tmp/dead_param_log.jsonl
+Ground truth is recoverable without a side channel: the underlying evaluator
+prints the true Spearman correlation into artifacts["feedback"], which the
+framework persists in each program's checkpoint JSON alongside the perturbed
+combined_score. The /tmp log below is best-effort only and does NOT survive
+the run, because the framework stops and removes its container on completion.
 
-DEAD_WEIGHT is read from the env, which the framework passes through via
-docker exec -e, so control and treatment need no rebuild:
-  0.0 = control (pass-through), 0.3 = treatment.
+DEAD_WEIGHT is baked into the image via ENV in the Dockerfile. Do not rely on
+setting it in your shell: the framework does not forward ambient environment
+into the container, so an unset value silently falls back to the default.
+Control and treatment are separate directories, hence separate images:
+  text_similarity_control -> ENV DEAD_WEIGHT=0.0
+  text_similarity_dead    -> ENV DEAD_WEIGHT=0.3
 """
 
 import hashlib
